@@ -1,0 +1,60 @@
+@import '~ngx-toastr/toastr.css';
+.header{
+  background-image: url(../../assets/background_1.png);
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+}
+.labels{
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+    width: 100%;
+}
+.input-group{
+  width: 20%;
+  margin-left: 40%;
+}
+.input-group input{
+  background: url(../../assets/magnifying_glass_small.png) no-repeat scroll 7px 7px;
+  padding-left:30px;
+  background-color: #bbb;
+  border-radius: 20px;
+
+}
+.input-group button{
+  background-image: linear-gradient(to right, #FF6161 , #FF61A3);
+  margin: 4px;
+  border-radius: 40px;
+  padding: 2px 18px;
+}
+.Trending{
+  width: 350px;
+  height: 200px;
+  margin-bottom: 19px;
+  border-radius: 9px;
+}
+.contain{
+  background-color: #211F2A;
+  padding: 2% 16%;
+}
+.inputFieldDiv{
+  background-image: linear-gradient(transparent 0%, #211F2A);
+  padding: 30px;
+  position: absolute;
+  top: 187px;
+  width: 100%;
+}
+.input-group-append{
+  position: absolute;
+  left: 77%;
+  z-index: 1111111;
+}
+#toast-container > div {
+  opacity:1;
+}
+.containHeader{
+  color: #7BFBFF;
+  font-weight: 700;
+  font-size: 20px;
+}

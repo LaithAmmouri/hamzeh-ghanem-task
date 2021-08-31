@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="header"
+  [ngStyle]="{ 'background':  'url( '+ image_url +' )', 'background-size':'cover' }">
+    <img class="logo" src="../assets/LuckyTrip_Logo_Small.png">
+    <div class="input-group mb-3">
+      <input type="text"
+      [(ngModel)]="searchField"
+      class="form-control"
+      placeholder="Enter a Destination..."
+      aria-label="Enter a Destination..."
+      aria-describedby="basic-addon2"
+      >
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary"
+        type="button"
+        >GO</button>
+      </div>
+    </div>
+    <div class="labels">
+      <h1>{{city}}</h1>
+      <h3>{{country_name}}</h3>
+    </div>
+    <div class="descriptionDiv">
+      <h3 >What’s it like?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+    </div>
+  </div>
+
+  <div class="contain">
+    <div class="row">
+      <div class="col-sm-12 containHeader">Blog Posts</div>
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-4" *ngFor="let country of activities">
+            <img class="Trending" src="{{country.thumbnail.image_url}}">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <h3>Find a trip to Rome</h3>
+      <p>Tap the Lucky button to get started…</p>
+      <img id="breathing-button" src="../../assets/lucky_button.png">
+    </div>
+  </div>
+</body>
+</html>
